@@ -1,0 +1,645 @@
+﻿Log file open, 04/29/16 10:16:50
+LogInit:Display: Running engine for game: BatteryCollector
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1110765094) SRandInit(1110765129).
+LogTaskGraph: Started task graph with 4 named threads and 6 total threads.
+LogStats: Stats thread started at 0.130843
+LogInit: Version: 4.11.2-2946394+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Apr 18 2016 02:18:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.04.29-08.16.51:331][  0]LogInit: Selected Device Profile: [Windows]
+[2016.04.29-08.16.51:331][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.04.29-08.16.51:363][  0]LogInit: Computer: DESKTOP-8E86HBK
+[2016.04.29-08.16.51:363][  0]LogInit: User: Zcience
+[2016.04.29-08.16.51:363][  0]LogInit: CPU Page size=65536, Cores=3
+[2016.04.29-08.16.51:363][  0]LogInit: High frequency timer resolution =14.318180 MHz
+[2016.04.29-08.16.51:363][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
+[2016.04.29-08.16.51:363][  0]LogMemory: Platform Memory Stats for Windows
+[2016.04.29-08.16.51:363][  0]LogMemory: Process Physical Memory: 313.68 MB used, 313.68 MB peak
+[2016.04.29-08.16.51:363][  0]LogMemory: Process Virtual Memory: 314.74 MB used, 314.74 MB peak
+[2016.04.29-08.16.51:363][  0]LogMemory: Physical Memory: 3276.86 MB used, 8174.11 MB total
+[2016.04.29-08.16.51:363][  0]LogMemory: Virtual Memory: 651.81 MB used, 134217728.00 MB total
+[2016.04.29-08.16.51:624][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.04.29-08.16.52:392][  0]LogD3D11RHI: D3D11 adapters:
+[2016.04.29-08.16.52:426][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 770' (Feature Level 11_0)
+[2016.04.29-08.16.52:426][  0]LogD3D11RHI:       1989MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 2 output[s]
+[2016.04.29-08.16.52:429][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.04.29-08.16.52:429][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 4087MB of shared system memory, 0 output[s]
+[2016.04.29-08.16.52:429][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.04.29-08.16.52:435][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.04.29-08.16.52:435][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 770
+[2016.04.29-08.16.52:435][  0]LogD3D11RHI:   Driver Version: 10.18.13.6175 (internal 10.18.13.6175)
+[2016.04.29-08.16.52:435][  0]LogD3D11RHI:      Driver Date: 1-22-2016
+[2016.04.29-08.16.52:436][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.04.29-08.16.52:456][  0]LogD3D11RHI: Async texture creation enabled
+[2016.04.29-08.16.52:502][  0]LogShaderCompilers: Guid format shader working directory is -25 characters bigger than the processId version (../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Intermediate/Shaders/WorkingDirectory/4488/).
+[2016.04.29-08.16.52:502][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Zcience/AppData/Local/Temp/UnrealShaderWorkingDir/C98DDB3C441D3D762ED69D9C15F122EA/'.
+[2016.04.29-08.16.52:503][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.04.29-08.16.55:487][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.04.29-08.16.55:494][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.04.29-08.16.55:501][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.04.29-08.16.55:508][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.04.29-08.16.55:515][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.04.29-08.16.55:524][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.04.29-08.16.55:530][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.04.29-08.16.55:535][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.04.29-08.16.55:541][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.04.29-08.16.55:547][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.04.29-08.16.55:552][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.04.29-08.16.55:563][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.04.29-08.16.55:563][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.04.29-08.16.55:564][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.04.29-08.16.55:622][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.04.29-08.16.55:626][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.04.29-08.16.55:631][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.04.29-08.16.55:636][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.04.29-08.16.55:645][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.04.29-08.16.55:645][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.04.29-08.16.56:065][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.04.29-08.16.56:574][  0]LogDerivedDataCache: Loaded boot cache 0.51s 47MB C:/Users/Zcience/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.04.29-08.16.56:574][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Zcience/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.04.29-08.16.56:574][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.04.29-08.16.56:574][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.04.29-08.16.56:574][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.04.29-08.16.56:574][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.04.29-08.16.56:611][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.04.29-08.16.56:624][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Zcience/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.04.29-08.17.00:150][  0]LogInit: Selected Device Profile: [Windows]
+[2016.04.29-08.17.00:155][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.04.29-08.17.00:375][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.04.29-08.17.00:662][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.04.29-08.17.00:662][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.04.29-08.17.00:662][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.04.29-08.17.01:598][  0]LogUObjectArray: 27679 objects as part of root set at end of initial load.
+[2016.04.29-08.17.01:598][  0]LogUObjectAllocator: 5591592 out of 0 bytes used by permanent object pool.
+[2016.04.29-08.17.01:598][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.04.29-08.17.01:608][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.04.29-08.17.01:922][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.04.29-08.17.01:923][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.04.29-08.17.02:450][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.04.29-08.17.02:450][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.04.29-08.17.02:450][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.04.29-08.17.02:450][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.04.29-08.17.02:450][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.04.29-08.17.02:450][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.04.29-08.17.04:704][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.04.29-08.17.05:418][  0]LogAssetRegistry: FAssetRegistry took 0.0240 seconds to start up
+[2016.04.29-08.17.05:902][  0]SourceControl: Info Source control is disabled
+[2016.04.29-08.17.06:067][  0]SourceControl: Info Source control is disabled
+[2016.04.29-08.17.06:086][  0]SourceControl: Info Source control is disabled
+[2016.04.29-08.17.06:100][  0]SourceControl: Info Source control is disabled
+[2016.04.29-08.17.06:326][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2016.04.29-08.17.06:482][  0]LogEngine: Initializing Engine...
+[2016.04.29-08.17.06:885][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.04.29-08.17.06:908][  0]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.04.29-08.17.06:925][  0]LogInit: FAudioDevice initialized.
+[2016.04.29-08.17.06:986][  0]LogDerivedDataCache: Saved boot cache 0.06s 47MB C:/Users/Zcience/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.04.29-08.17.07:005][  0]LogInit: Texture streaming: Enabled
+[2016.04.29-08.17.07:047][  0]LogInit: Transaction tracking system initialized
+[2016.04.29-08.17.07:110][  0]BlueprintLog: New page: Editor Load
+[2016.04.29-08.17.07:381][  0]LocalizationService: Info Localization service is disabled
+[2016.04.29-08.17.07:570][  0]LogConsoleResponse:Display: 
+[2016.04.29-08.17.08:085][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.04.29-08.17.08:086][  0]LogCook:Display: Mobile HDR setting 1
+[2016.04.29-08.17.08:087][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.04.29-08.17.08:208][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/' took 0.02s
+[2016.04.29-08.17.08:208][  0]SourceControl: Info Source control is disabled
+[2016.04.29-08.17.08:209][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Maps/CollectionLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.04.29-08.17.08:217][  0]LightingResults: New page: Lighting Build
+[2016.04.29-08.17.08:230][  0]MapCheck: New page: Map Check
+[2016.04.29-08.17.08:230][  0]LightingResults: New page: Lighting Build
+[2016.04.29-08.17.10:032][  0]LogAIModule: Creating AISystem for world CollectionLevel
+[2016.04.29-08.17.10:250][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.04.29-08.17.10:252][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.04.29-08.17.10:326][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 73.634ms to complete.
+[2016.04.29-08.17.10:326][  0]LogFileHelpers: Loading map 'CollectionLevel' took 2.117
+[2016.04.29-08.17.10:608][  0]LogCollectionManager: Loaded 0 collections in 0.002522 seconds
+[2016.04.29-08.17.10:691][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Zcience/Documents/UnrealProjects/BatteryCollector/Saved/Collections/' took 0.01s
+[2016.04.29-08.17.10:691][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Developers/Zcience/Collections/' took 0.01s
+[2016.04.29-08.17.10:691][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Collections/' took 0.01s
+[2016.04.29-08.17.10:691][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000022 seconds
+[2016.04.29-08.17.10:708][  0]LogContentBrowser: Native class hierarchy populated in 0.0169 seconds. Added 1982 classes and 345 folders.
+[2016.04.29-08.17.10:718][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.04.29-08.17.10:718][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.04.29-08.17.10:720][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0018 seconds. Added 12 classes and 0 folders.
+[2016.04.29-08.17.10:730][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0018 seconds. Added 0 classes and 0 folders.
+[2016.04.29-08.17.10:759][  0]LogContentBrowser: Native class hierarchy updated for 'SuperSearch' in 0.0018 seconds. Added 1 classes and 2 folders.
+[2016.04.29-08.17.11:156][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0019 seconds. Added 0 classes and 0 folders.
+[2016.04.29-08.17.11:168][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0017 seconds. Added 1 classes and 2 folders.
+[2016.04.29-08.17.11:384][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.04.29-08.17.11:402][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.04.29-08.17.11:437][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0018 seconds. Added 1 classes and 2 folders.
+[2016.04.29-08.17.11:437][  0]LogLoad: Full Startup: 22.46 seconds (BP compile: 0.36 seconds)
+[2016.04.29-08.17.11:437][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.04.29-08.17.11:437][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.04.29-08.17.11:447][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.04.29-08.17.11:448][  0]LogOcInput: OculusInput pre-init called
+[2016.04.29-08.17.11:585][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.04.29-08.17.11:879][  0]LogRenderer: Reallocating scene render targets to support 1208x580 (Frame:2).
+[2016.04.29-08.17.12:048][  2]LogAssetRegistry: Asset discovery search completed in 6.6524 seconds
+[2016.04.29-08.17.12:049][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000002 seconds (found 0 objects)
+[2016.04.29-08.17.12:049][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000418 seconds (updated 0 objects)
+[2016.04.29-08.24.16:768][488]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Zcience/Documents/UnrealProjects/BatteryCollector/Source/BatteryCollector/Pickup.h'
+[2016.04.29-08.24.16:828][488]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Zcience/Documents/UnrealProjects/BatteryCollector/Source/BatteryCollector/Pickup.cpp'
+[2016.04.29-08.28.05:735][511]LogEditorViewport: Clicking on Actor (LMB): BP_DemoRoom_C (BP_DemoRoom)
+[2016.04.29-08.34.59:307][707]Recompiling BatteryCollector...
+[2016.04.29-08.34.59:307][707]Launching UnrealBuildTool... [C:/Program Files (x86)/Epic Games/4.11/Engine/Binaries/DotNET/UnrealBuildTool.exe BatteryCollector -ModuleWithSuffix BatteryCollector 1300 Win64 Development -editorrecompile -canskiplink "C:/Users/Zcience/Documents/UnrealProjects/BatteryCollector/BatteryCollector.uproject"  -2015]
+[2016.04.29-08.34.59:310][707]Warning: Starting HotReload took  0.0s.
+[2016.04.29-08.35.39:373][568]CompilerResultsLog: New page: Compilation - Apr 29, 2016, 11:35:39 AM
+[2016.04.29-08.35.39:374][568]CompilerResultsLog: Info Performing full C++ include scan (hot reloading a new target)
+[2016.04.29-08.35.39:374][568]CompilerResultsLog: Info Creating makefile for hot reloading BatteryCollector (UnrealBuildTool.exe is newer)
+[2016.04.29-08.35.39:374][568]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.04.29-08.35.39:374][568]CompilerResultsLog: Info Parsing headers for BatteryCollectorEditor
+[2016.04.29-08.35.39:374][568]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Zcience\Documents\UnrealProjects\BatteryCollector\BatteryCollector.uproject" "C:\Users\Zcience\Documents\UnrealProjects\BatteryCollector\Intermediate\Build\Win64\BatteryCollectorEditor\Development\UnrealHeaderTool.manifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.04.29-08.35.39:374][568]CompilerResultsLog: Info Reflection code generated for BatteryCollectorEditor in 5.5869016 seconds
+[2016.04.29-08.35.39:374][568]CompilerResultsLog: Info Performing 9 actions (3 in parallel)
+[2016.04.29-08.35.39:374][568]CompilerResultsLog: Info [2/9] Resource PCLaunch.rc
+[2016.04.29-08.35.39:374][568]CompilerResultsLog: Info [3/9] Resource ModuleVersionResource.rc.inl
+[2016.04.29-08.35.39:374][568]CompilerResultsLog: Info PCH.BatteryCollector.h.cpp
+[2016.04.29-08.35.39:374][568]CompilerResultsLog: Info BatteryCollectorCharacter.cpp
+[2016.04.29-08.35.39:374][568]CompilerResultsLog: Info BatteryCollector.cpp
+[2016.04.29-08.35.39:374][568]CompilerResultsLog: Info BatteryCollectorGameMode.cpp
+[2016.04.29-08.35.39:374][568]CompilerResultsLog: Info Pickup.cpp
+[2016.04.29-08.35.39:374][568]CompilerResultsLog: Info BatteryCollector.generated.cpp
+[2016.04.29-08.35.39:374][568]CompilerResultsLog: Info [9/9] Link UE4Editor-BatteryCollector-1300.dll
+[2016.04.29-08.35.39:374][568]CompilerResultsLog: Info    Creating library C:\Users\Zcience\Documents\UnrealProjects\BatteryCollector\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BatteryCollector-1300.lib and object C:\Users\Zcience\Documents\UnrealProjects\BatteryCollector\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BatteryCollector-1300.exp
+[2016.04.29-08.35.39:374][568]CompilerResultsLog: Info -------- End Detailed Actions Stats -----------------------------------------------------------
+[2016.04.29-08.35.39:374][568]CompilerResultsLog: Info Total build time: 39.88 seconds
+[2016.04.29-08.35.39:374][568]LogMainFrame: MainFrame: Module compiling took 40.096 seconds
+[2016.04.29-08.35.39:452][568]LogClass: Could not find existing class BatteryCollectorCharacter in package /Script/BatteryCollector for HotReload, assuming new class
+[2016.04.29-08.35.39:452][568]LogClass: Could not find existing class BatteryCollectorGameMode in package /Script/BatteryCollector for HotReload, assuming new class
+[2016.04.29-08.35.39:452][568]LogClass: Could not find existing class Pickup in package /Script/BatteryCollector for HotReload, assuming new class
+[2016.04.29-08.35.39:452][568]LogClass: Function IsActive is new.
+[2016.04.29-08.35.39:452][568]LogClass: Function SetActive is new.
+[2016.04.29-08.35.39:459][568]LogHotReload: Re-instancing BatteryCollectorCharacter after hot-reload.
+[2016.04.29-08.35.39:513][568]LogHotReload: Re-instancing BatteryCollectorGameMode after hot-reload.
+[2016.04.29-08.35.39:562][568]LogHotReload: Re-instancing Pickup after hot-reload.
+[2016.04.29-08.35.39:612][568]LogContentBrowser: Native class hierarchy updated for 'BatteryCollector' in 0.0021 seconds. Added 3 classes and 2 folders.
+[2016.04.29-08.35.39:614][568]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.04.29-08.35.39:632][568]LogContentBrowser: Native class hierarchy populated in 0.0144 seconds. Added 1985 classes and 351 folders.
+[2016.04.29-08.35.39:633][568]Warning: HotReload took 40.4s.
+[2016.04.29-08.36.11:847][969]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0027 seconds. Added 108 classes and 0 folders.
+[2016.04.29-08.36.16:203][172]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Pickup_BP" FILE="../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Blueprints/Pickup_BP.uasset" SILENT=true
+[2016.04.29-08.36.16:232][172]LogSavePackage: Save=25.60ms
+[2016.04.29-08.36.16:232][172]LogSavePackage: Moving '../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Saved/Pickup_BP4FA6FB2F437375F11F51C88AAC89B769.tmp' to '../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Blueprints/Pickup_BP.uasset'
+[2016.04.29-08.36.16:238][172]LogSavePackage: Total save time: 32.63ms
+[2016.04.29-08.36.16:238][172]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Blueprints/Pickup_BP.uasset
+[2016.04.29-08.36.36:789][911]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Pickup_BP" FILE="../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Blueprints/Pickup_BP.uasset" SILENT=true
+[2016.04.29-08.36.36:833][911]LogSavePackage: Save=32.86ms
+[2016.04.29-08.36.36:833][911]LogSavePackage: Moving '../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Saved/Pickup_BP9B674B0E4B1B128109F143BA5F585BD5.tmp' to '../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Blueprints/Pickup_BP.uasset'
+[2016.04.29-08.36.36:837][911]LogSavePackage: Total save time: 46.01ms
+[2016.04.29-08.36.36:837][911]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Blueprints/Pickup_BP.uasset
+[2016.04.29-08.36.52:228][325]LogSavePackage: Save=916.46ms
+[2016.04.29-08.36.52:228][325]LogSavePackage: Moving '../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Saved/CollectionLevel866F6AA147A11B1E17C8E9AA64B7916A.tmp' to '../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Maps/CollectionLevel.umap'
+[2016.04.29-08.36.52:233][325]LogSavePackage: Total save time: 941.81ms
+[2016.04.29-08.36.52:233][325]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Maps/CollectionLevel.umap
+[2016.04.29-08.36.52:281][325]LogFileHelpers: Saving map 'CollectionLevel' took 1.119
+[2016.04.29-08.36.53:419][412]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.04.29-08.36.53:419][412]PIE: New page: PIE session: CollectionLevel (Apr 29, 2016, 11:36:53 AM)
+[2016.04.29-08.36.53:419][412]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_CollectionLevel
+[2016.04.29-08.36.53:425][412]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006503s)
+[2016.04.29-08.36.53:426][412]LogAIModule: Creating AISystem for world CollectionLevel
+[2016.04.29-08.36.53:427][412]LogPlayLevel: PIE: World Init took: (0.000997s)
+[2016.04.29-08.36.53:427][412]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/CollectionLevel.CollectionLevel to /Game/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.007767s)
+[2016.04.29-08.36.53:468][412]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.04.29-08.36.53:480][412]LogInit: FAudioDevice initialized.
+[2016.04.29-08.36.53:538][412]LogWorld: Game class is 'BatteryCollectorGameMode'
+[2016.04.29-08.36.53:545][412]LogWorld: Bringing World /Game/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 0) at 2016.04.29-10.36.53
+[2016.04.29-08.36.53:546][412]LogWorld: Bringing up level for play took: 0.004204
+[2016.04.29-08.36.53:555][412]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0019 seconds. Added 9 classes and 0 folders.
+[2016.04.29-08.36.53:567][412]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_CollectionLevel -0.63
+[2016.04.29-08.39.09:583][632]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Pickup_BP" FILE="../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Blueprints/Pickup_BP.uasset" SILENT=true
+[2016.04.29-08.39.09:620][632]LogSavePackage: Save=33.41ms
+[2016.04.29-08.39.09:620][632]LogSavePackage: Moving '../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Saved/Pickup_BPC23675CB40630CB9FACA62B635E571FB.tmp' to '../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Blueprints/Pickup_BP.uasset'
+[2016.04.29-08.39.09:625][632]LogSavePackage: Total save time: 39.61ms
+[2016.04.29-08.39.09:625][632]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Blueprints/Pickup_BP.uasset
+[2016.04.29-08.40.17:983][488]Running C:/Program Files (x86)/Epic Games/4.11/Engine/Binaries/DotNET/UnrealBuildTool.exe BatteryCollector Win64 Development -editorrecompile "C:/Users/Zcience/Documents/UnrealProjects/BatteryCollector/BatteryCollector.uproject" -invalidatemakefilesonly -2015
+[2016.04.29-08.40.18:487][488]Invalidating makefiles only in this run.
+[2016.04.29-08.40.18:740][488]Recompiling BatteryCollector...
+[2016.04.29-08.40.18:740][488]Launching UnrealBuildTool... [C:/Program Files (x86)/Epic Games/4.11/Engine/Binaries/DotNET/UnrealBuildTool.exe BatteryCollector -ModuleWithSuffix BatteryCollector 1219 Win64 Development -editorrecompile -canskiplink "C:/Users/Zcience/Documents/UnrealProjects/BatteryCollector/BatteryCollector.uproject"  -2015]
+[2016.04.29-08.40.30:904][488]CompilerResultsLog: New page: Compilation - Apr 29, 2016, 11:40:30 AM
+[2016.04.29-08.40.30:904][488]CompilerResultsLog: Info Creating makefile for hot reloading BatteryCollector (no existing makefile)
+[2016.04.29-08.40.30:904][488]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.04.29-08.40.30:904][488]CompilerResultsLog: Info Parsing headers for BatteryCollectorEditor
+[2016.04.29-08.40.30:904][488]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Zcience\Documents\UnrealProjects\BatteryCollector\BatteryCollector.uproject" "C:\Users\Zcience\Documents\UnrealProjects\BatteryCollector\Intermediate\Build\Win64\BatteryCollectorEditor\Development\UnrealHeaderTool.manifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.04.29-08.40.30:904][488]CompilerResultsLog: Info Reflection code generated for BatteryCollectorEditor in 4.8592921 seconds
+[2016.04.29-08.40.30:904][488]CompilerResultsLog: Info Performing 3 actions (3 in parallel)
+[2016.04.29-08.40.30:904][488]CompilerResultsLog: Info BatteryPickup.cpp
+[2016.04.29-08.40.30:904][488]CompilerResultsLog: Info BatteryCollector.generated.cpp
+[2016.04.29-08.40.30:904][488]CompilerResultsLog: Info [3/3] Link UE4Editor-BatteryCollector-1219.dll
+[2016.04.29-08.40.30:904][488]CompilerResultsLog: Info    Creating library C:\Users\Zcience\Documents\UnrealProjects\BatteryCollector\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BatteryCollector-1219.lib and object C:\Users\Zcience\Documents\UnrealProjects\BatteryCollector\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BatteryCollector-1219.exp
+[2016.04.29-08.40.30:905][488]CompilerResultsLog: Info -------- End Detailed Actions Stats -----------------------------------------------------------
+[2016.04.29-08.40.30:905][488]CompilerResultsLog: Info Total build time: 12.00 seconds
+[2016.04.29-08.40.30:905][488]LogMainFrame: MainFrame: Module compiling took 12.191 seconds
+[2016.04.29-08.40.30:974][488]LogClass: Could not find existing class BatteryPickup in package /Script/BatteryCollector for HotReload, assuming new class
+[2016.04.29-08.40.30:980][488]LogContentBrowser: Native class hierarchy updated for 'BatteryCollector' in 0.0020 seconds. Added 4 classes and 2 folders.
+[2016.04.29-08.40.30:984][488]Warning: HotReload successful (2 functions remapped  0 scriptstructs remapped)
+[2016.04.29-08.40.31:459][488]LogContentBrowser: Native class hierarchy populated in 0.0156 seconds. Added 1986 classes and 351 folders.
+[2016.04.29-08.40.31:459][488]Warning: HotReload took 12.8s.
+[2016.04.29-08.40.31:461][488]Warning: HotReload operation took 12.8s.
+[2016.04.29-08.40.31:644][488]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Zcience/Documents/UnrealProjects/BatteryCollector/Source/BatteryCollector/BatteryPickup.h'
+[2016.04.29-08.40.31:746][488]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Zcience/Documents/UnrealProjects/BatteryCollector/Source/BatteryCollector/BatteryPickup.cpp'
+[2016.04.29-08.40.31:763][488]LogHotReload: New module detected: UE4Editor-BatteryCollector-1219.dll
+[2016.04.29-08.40.31:808][489]LogHotReload: Starting Hot-Reload from IDE
+[2016.04.29-08.40.31:986][489]LogContentBrowser: Native class hierarchy updated for 'BatteryCollector' in 0.0019 seconds. Added 4 classes and 2 folders.
+[2016.04.29-08.40.31:989][489]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.04.29-08.40.32:376][489]LogContentBrowser: Native class hierarchy populated in 0.0160 seconds. Added 1986 classes and 351 folders.
+[2016.04.29-08.40.32:401][489]Warning: HotReload took 13.7s.
+[2016.04.29-08.43.14:075][193]LogEditorViewport: Clicking on Actor (LMB): BP_DemoRoom_C (BP_DemoRoom)
+[2016.04.29-08.43.26:719][492]Recompiling BatteryCollector...
+[2016.04.29-08.43.26:719][492]Launching UnrealBuildTool... [C:/Program Files (x86)/Epic Games/4.11/Engine/Binaries/DotNET/UnrealBuildTool.exe BatteryCollector -ModuleWithSuffix BatteryCollector 3603 Win64 Development -editorrecompile -canskiplink "C:/Users/Zcience/Documents/UnrealProjects/BatteryCollector/BatteryCollector.uproject"  -2015]
+[2016.04.29-08.43.26:721][492]Warning: Starting HotReload took  0.0s.
+[2016.04.29-08.43.39:781][721]CompilerResultsLog: New page: Compilation - Apr 29, 2016, 11:43:39 AM
+[2016.04.29-08.43.39:781][721]CompilerResultsLog: Info Creating makefile for hot reloading BatteryCollector (working set of source files changed)
+[2016.04.29-08.43.39:781][721]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.04.29-08.43.39:781][721]CompilerResultsLog: Info Parsing headers for BatteryCollectorEditor
+[2016.04.29-08.43.39:781][721]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Zcience\Documents\UnrealProjects\BatteryCollector\BatteryCollector.uproject" "C:\Users\Zcience\Documents\UnrealProjects\BatteryCollector\Intermediate\Build\Win64\BatteryCollectorEditor\Development\UnrealHeaderTool.manifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.04.29-08.43.39:781][721]CompilerResultsLog: Info Reflection code generated for BatteryCollectorEditor in 5.3609088 seconds
+[2016.04.29-08.43.39:781][721]CompilerResultsLog: Info Performing 3 actions (3 in parallel)
+[2016.04.29-08.43.39:781][721]CompilerResultsLog: Info BatteryPickup.cpp
+[2016.04.29-08.43.39:781][721]CompilerResultsLog: Info BatteryCollector.generated.cpp
+[2016.04.29-08.43.39:781][721]CompilerResultsLog: Info [3/3] Link UE4Editor-BatteryCollector-3603.dll
+[2016.04.29-08.43.39:781][721]CompilerResultsLog: Info    Creating library C:\Users\Zcience\Documents\UnrealProjects\BatteryCollector\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BatteryCollector-3603.lib and object C:\Users\Zcience\Documents\UnrealProjects\BatteryCollector\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BatteryCollector-3603.exp
+[2016.04.29-08.43.39:781][721]CompilerResultsLog: Info -------- End Detailed Actions Stats -----------------------------------------------------------
+[2016.04.29-08.43.39:781][721]CompilerResultsLog: Info Total build time: 12.88 seconds
+[2016.04.29-08.43.39:782][721]LogMainFrame: MainFrame: Module compiling took 13.085 seconds
+[2016.04.29-08.43.39:943][721]LogClass: Could not find existing class BatteryPickup in package /Script/BatteryCollector for HotReload, assuming new class
+[2016.04.29-08.43.39:951][721]LogHotReload: Re-instancing BatteryPickup after hot-reload.
+[2016.04.29-08.43.40:024][721]LogContentBrowser: Native class hierarchy updated for 'BatteryCollector' in 0.0020 seconds. Added 4 classes and 2 folders.
+[2016.04.29-08.43.40:028][721]Warning: HotReload successful (2 functions remapped  0 scriptstructs remapped)
+[2016.04.29-08.43.40:441][721]LogContentBrowser: Native class hierarchy populated in 0.0147 seconds. Added 1986 classes and 351 folders.
+[2016.04.29-08.43.40:441][721]Warning: HotReload took 13.8s.
+[2016.04.29-08.44.54:915][425]LogMaterial: Missing cached shader map for material M_Battery, compiling. 
+[2016.04.29-08.44.54:955][425]LogStaticMesh: Building static mesh SM_Battery_Medium...
+[2016.04.29-08.44.55:000][425]LogStaticMesh: Built static mesh [0.05s] /Game/ExampleContent/Blueprint_Communication/Meshes/SM_Battery_Medium.SM_Battery_Medium
+[2016.04.29-08.45.12:023][519]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BatteryPickup_BP" FILE="../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Blueprints/BatteryPickup_BP.uasset" SILENT=true
+[2016.04.29-08.45.12:062][519]LogSavePackage: Save=35.36ms
+[2016.04.29-08.45.12:062][519]LogSavePackage: Moving '../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Saved/BatteryPickup_BP3E8C1A3A45744BF74A8CB099773BB501.tmp' to '../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Blueprints/BatteryPickup_BP.uasset'
+[2016.04.29-08.45.12:068][519]LogSavePackage: Total save time: 41.46ms
+[2016.04.29-08.45.12:068][519]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Blueprints/BatteryPickup_BP.uasset
+[2016.04.29-08.45.27:084][556]BlueprintLog: New page: Compile BatteryPickup_BP
+[2016.04.29-08.45.27:377][556]BlueprintEditorCompileResults: Info [1718.40] Compile of BatteryPickup_BP successful! [in 292 ms]
+[2016.04.29-08.45.43:639][133]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.04.29-08.45.43:639][133]PIE: New page: PIE session: CollectionLevel (Apr 29, 2016, 11:45:43 AM)
+[2016.04.29-08.45.43:640][133]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_CollectionLevel
+[2016.04.29-08.45.43:646][133]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006888s)
+[2016.04.29-08.45.43:648][133]LogAIModule: Creating AISystem for world CollectionLevel
+[2016.04.29-08.45.43:648][133]LogPlayLevel: PIE: World Init took: (0.001356s)
+[2016.04.29-08.45.43:648][133]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/CollectionLevel.CollectionLevel to /Game/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.008550s)
+[2016.04.29-08.45.43:696][133]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.04.29-08.45.43:707][133]LogInit: FAudioDevice initialized.
+[2016.04.29-08.45.43:738][133]LogWorld: Game class is 'BatteryCollectorGameMode'
+[2016.04.29-08.45.43:743][133]LogWorld: Bringing World /Game/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 0) at 2016.04.29-10.45.43
+[2016.04.29-08.45.43:744][133]LogWorld: Bringing up level for play took: 0.003921
+[2016.04.29-08.45.43:747][133]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_CollectionLevel -0.45
+[2016.04.29-08.47.38:988][130]LogSavePackage: Save=879.29ms
+[2016.04.29-08.47.38:988][130]LogSavePackage: Moving '../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Saved/CollectionLevelFAA02E194EE27C9F7CAF1996E8FD57E5.tmp' to '../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Maps/CollectionLevel.umap'
+[2016.04.29-08.47.38:994][130]LogSavePackage: Total save time: 906.56ms
+[2016.04.29-08.47.38:994][130]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Maps/CollectionLevel.umap
+[2016.04.29-08.47.39:037][130]LogFileHelpers: Saving map 'CollectionLevel' took 1.079
+[2016.04.29-08.47.39:100][130]LogSavePackage: Save=18.68ms
+[2016.04.29-08.47.39:100][130]LogSavePackage: Moving '../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Saved/SM_Battery_MediumA5167E7C4A5D7B44A0D7DDA551B84720.tmp' to '../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/ExampleContent/Blueprint_Communication/Meshes/SM_Battery_Medium.uasset'
+[2016.04.29-08.47.39:104][130]LogSavePackage: Total save time: 29.11ms
+[2016.04.29-08.47.39:104][130]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/ExampleContent/Blueprint_Communication/Meshes/SM_Battery_Medium.uasset
+[2016.04.29-08.47.55:207][359]LogSavePackage: Save=7.78ms
+[2016.04.29-08.47.55:207][359]LogSavePackage: Moving '../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Saved/SM_Battery_Medium8D60D70449BCAACE4BA139BA43CA6986.tmp' to '../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/ExampleContent/Blueprint_Communication/Meshes/SM_Battery_Medium.uasset'
+[2016.04.29-08.47.55:210][359]LogSavePackage: Total save time: 12.03ms
+[2016.04.29-08.47.55:210][359]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/ExampleContent/Blueprint_Communication/Meshes/SM_Battery_Medium.uasset
+[2016.04.29-08.47.57:319][532]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.04.29-08.47.57:319][532]PIE: New page: PIE session: CollectionLevel (Apr 29, 2016, 11:47:57 AM)
+[2016.04.29-08.47.57:319][532]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_CollectionLevel
+[2016.04.29-08.47.57:325][532]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005488s)
+[2016.04.29-08.47.57:326][532]LogAIModule: Creating AISystem for world CollectionLevel
+[2016.04.29-08.47.57:326][532]LogPlayLevel: PIE: World Init took: (0.001280s)
+[2016.04.29-08.47.57:326][532]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/CollectionLevel.CollectionLevel to /Game/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.007178s)
+[2016.04.29-08.47.57:371][532]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.04.29-08.47.57:383][532]LogInit: FAudioDevice initialized.
+[2016.04.29-08.47.57:415][532]LogWorld: Game class is 'BatteryCollectorGameMode'
+[2016.04.29-08.47.57:420][532]LogWorld: Bringing World /Game/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 0) at 2016.04.29-10.47.57
+[2016.04.29-08.47.57:421][532]LogWorld: Bringing up level for play took: 0.004268
+[2016.04.29-08.47.57:425][532]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_CollectionLevel -0.773
+[2016.04.29-08.49.28:667][650]LogEditorActor: Deleted Actor: Pickup_BP_C
+[2016.04.29-08.49.28:699][650]LogEditorActor: Deleted 1 Actors (0.033 secs)
+[2016.04.29-08.49.33:546][187]Cmd: DELETE
+[2016.04.29-08.49.33:546][187]Cmd: ACTOR DELETE
+[2016.04.29-08.49.33:549][187]LogEditorActor: Deleted Actor: BatteryPickup_BP_C
+[2016.04.29-08.49.33:581][187]LogEditorActor: Deleted 1 Actors (0.032 secs)
+[2016.04.29-08.49.53:516][531]Running C:/Program Files (x86)/Epic Games/4.11/Engine/Binaries/DotNET/UnrealBuildTool.exe BatteryCollector Win64 Development -editorrecompile "C:/Users/Zcience/Documents/UnrealProjects/BatteryCollector/BatteryCollector.uproject" -invalidatemakefilesonly -2015
+[2016.04.29-08.49.54:020][531]Invalidating makefiles only in this run.
+[2016.04.29-08.49.54:270][531]Recompiling BatteryCollector...
+[2016.04.29-08.49.54:270][531]Launching UnrealBuildTool... [C:/Program Files (x86)/Epic Games/4.11/Engine/Binaries/DotNET/UnrealBuildTool.exe BatteryCollector -ModuleWithSuffix BatteryCollector 508 Win64 Development -editorrecompile -canskiplink "C:/Users/Zcience/Documents/UnrealProjects/BatteryCollector/BatteryCollector.uproject"  -2015]
+[2016.04.29-08.50.06:518][531]CompilerResultsLog: New page: Compilation - Apr 29, 2016, 11:50:06 AM
+[2016.04.29-08.50.06:519][531]CompilerResultsLog: Info Creating makefile for hot reloading BatteryCollector (no existing makefile)
+[2016.04.29-08.50.06:519][531]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.04.29-08.50.06:519][531]CompilerResultsLog: Info Parsing headers for BatteryCollectorEditor
+[2016.04.29-08.50.06:519][531]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Zcience\Documents\UnrealProjects\BatteryCollector\BatteryCollector.uproject" "C:\Users\Zcience\Documents\UnrealProjects\BatteryCollector\Intermediate\Build\Win64\BatteryCollectorEditor\Development\UnrealHeaderTool.manifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.04.29-08.50.06:519][531]CompilerResultsLog: Info Reflection code generated for BatteryCollectorEditor in 4.7688032 seconds
+[2016.04.29-08.50.06:519][531]CompilerResultsLog: Info Performing 3 actions (3 in parallel)
+[2016.04.29-08.50.06:519][531]CompilerResultsLog: Info BatteryCollector.generated.cpp
+[2016.04.29-08.50.06:519][531]CompilerResultsLog: Info SpawnVolume.cpp
+[2016.04.29-08.50.06:519][531]CompilerResultsLog: Info [3/3] Link UE4Editor-BatteryCollector-508.dll
+[2016.04.29-08.50.06:519][531]CompilerResultsLog: Info    Creating library C:\Users\Zcience\Documents\UnrealProjects\BatteryCollector\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BatteryCollector-508.lib and object C:\Users\Zcience\Documents\UnrealProjects\BatteryCollector\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BatteryCollector-508.exp
+[2016.04.29-08.50.06:519][531]CompilerResultsLog: Info -------- End Detailed Actions Stats -----------------------------------------------------------
+[2016.04.29-08.50.06:519][531]CompilerResultsLog: Info Total build time: 12.08 seconds
+[2016.04.29-08.50.06:519][531]LogMainFrame: MainFrame: Module compiling took 12.274 seconds
+[2016.04.29-08.50.06:617][531]LogClass: Could not find existing class SpawnVolume in package /Script/BatteryCollector for HotReload, assuming new class
+[2016.04.29-08.50.06:624][531]LogContentBrowser: Native class hierarchy updated for 'BatteryCollector' in 0.0022 seconds. Added 5 classes and 2 folders.
+[2016.04.29-08.50.06:628][531]Warning: HotReload successful (2 functions remapped  0 scriptstructs remapped)
+[2016.04.29-08.50.07:073][531]LogContentBrowser: Native class hierarchy populated in 0.0150 seconds. Added 1987 classes and 351 folders.
+[2016.04.29-08.50.07:073][531]Warning: HotReload took 12.8s.
+[2016.04.29-08.50.07:074][531]Warning: HotReload operation took 12.8s.
+[2016.04.29-08.50.07:247][531]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Zcience/Documents/UnrealProjects/BatteryCollector/Source/BatteryCollector/SpawnVolume.h'
+[2016.04.29-08.50.07:368][531]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Zcience/Documents/UnrealProjects/BatteryCollector/Source/BatteryCollector/SpawnVolume.cpp'
+[2016.04.29-08.50.07:391][531]LogHotReload: New module detected: UE4Editor-BatteryCollector-508.dll
+[2016.04.29-08.50.07:434][532]LogHotReload: Starting Hot-Reload from IDE
+[2016.04.29-08.50.07:607][532]LogContentBrowser: Native class hierarchy updated for 'BatteryCollector' in 0.0021 seconds. Added 5 classes and 2 folders.
+[2016.04.29-08.50.07:610][532]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.04.29-08.50.07:998][532]LogContentBrowser: Native class hierarchy populated in 0.0208 seconds. Added 1987 classes and 351 folders.
+[2016.04.29-08.50.08:023][532]Warning: HotReload took 13.8s.
+[2016.04.29-08.58.25:845][ 22]LogSavePackage: Save=874.52ms
+[2016.04.29-08.58.25:845][ 22]LogSavePackage: Moving '../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Saved/CollectionLevel_Auto1B2460FCC4C9D7274A6BF31A5EB1A50A1.tmp' to '../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Saved/Autosaves/Game/Maps/CollectionLevel_Auto1.umap'
+[2016.04.29-08.58.25:848][ 22]LogSavePackage: Total save time: 897.19ms
+[2016.04.29-08.58.25:848][ 22]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Saved/Autosaves/Game/Maps/CollectionLevel_Auto1.umap
+[2016.04.29-08.58.25:851][ 22]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/CollectionLevel' took 1.034
+[2016.04.29-08.58.25:851][ 22]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.034
+[2016.04.29-08.59.13:893][167]LogHotReload: New module detected: UE4Editor-BatteryCollector-9615.dll
+[2016.04.29-08.59.15:574][173]LogHotReload: Starting Hot-Reload from IDE
+[2016.04.29-08.59.15:692][173]LogClass: Could not find existing class SpawnVolume in package /Script/BatteryCollector for HotReload, assuming new class
+[2016.04.29-08.59.15:692][173]LogClass: Function GetRandomPointInVolume is new.
+[2016.04.29-08.59.15:703][173]LogHotReload: Re-instancing SpawnVolume after hot-reload.
+[2016.04.29-08.59.15:795][173]LogContentBrowser: Native class hierarchy updated for 'BatteryCollector' in 0.0025 seconds. Added 5 classes and 2 folders.
+[2016.04.29-08.59.15:798][173]Warning: HotReload successful (2 functions remapped  0 scriptstructs remapped)
+[2016.04.29-08.59.16:245][173]LogContentBrowser: Native class hierarchy populated in 0.0172 seconds. Added 1987 classes and 351 folders.
+[2016.04.29-08.59.16:269][173]Warning: HotReload took 562.0s.
+[2016.04.29-09.15.45:396][148]Recompiling BatteryCollector...
+[2016.04.29-09.15.45:396][148]Launching UnrealBuildTool... [C:/Program Files (x86)/Epic Games/4.11/Engine/Binaries/DotNET/UnrealBuildTool.exe BatteryCollector -ModuleWithSuffix BatteryCollector 3530 Win64 Development -editorrecompile -canskiplink "C:/Users/Zcience/Documents/UnrealProjects/BatteryCollector/BatteryCollector.uproject"  -2015]
+[2016.04.29-09.15.45:399][148]Warning: Starting HotReload took  0.0s.
+[2016.04.29-09.15.58:800][708]CompilerResultsLog: New page: Compilation - Apr 29, 2016, 12:15:58 PM
+[2016.04.29-09.15.58:800][708]CompilerResultsLog: Info Creating makefile for hot reloading BatteryCollector (working set of source files changed)
+[2016.04.29-09.15.58:801][708]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.04.29-09.15.58:801][708]CompilerResultsLog: Info Parsing headers for BatteryCollectorEditor
+[2016.04.29-09.15.58:801][708]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Zcience\Documents\UnrealProjects\BatteryCollector\BatteryCollector.uproject" "C:\Users\Zcience\Documents\UnrealProjects\BatteryCollector\Intermediate\Build\Win64\BatteryCollectorEditor\Development\UnrealHeaderTool.manifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.04.29-09.15.58:801][708]CompilerResultsLog: Info Reflection code generated for BatteryCollectorEditor in 5.4137137 seconds
+[2016.04.29-09.15.58:801][708]CompilerResultsLog: Info Performing 3 actions (3 in parallel)
+[2016.04.29-09.15.58:801][708]CompilerResultsLog: Info BatteryCollector.generated.cpp
+[2016.04.29-09.15.58:801][708]CompilerResultsLog: Info SpawnVolume.cpp
+[2016.04.29-09.15.58:801][708]CompilerResultsLog: Info [3/3] Link UE4Editor-BatteryCollector-3530.dll
+[2016.04.29-09.15.58:801][708]CompilerResultsLog: Info    Creating library C:\Users\Zcience\Documents\UnrealProjects\BatteryCollector\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BatteryCollector-3530.lib and object C:\Users\Zcience\Documents\UnrealProjects\BatteryCollector\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BatteryCollector-3530.exp
+[2016.04.29-09.15.58:801][708]CompilerResultsLog: Info -------- End Detailed Actions Stats -----------------------------------------------------------
+[2016.04.29-09.15.58:801][708]CompilerResultsLog: Info Total build time: 13.23 seconds
+[2016.04.29-09.15.58:801][708]LogMainFrame: MainFrame: Module compiling took 13.429 seconds
+[2016.04.29-09.15.58:941][708]LogClass: Could not find existing class SpawnVolume in package /Script/BatteryCollector for HotReload, assuming new class
+[2016.04.29-09.15.58:941][708]LogClass: Function GetRandomPointInVolume is new.
+[2016.04.29-09.15.58:951][708]LogHotReload: Re-instancing SpawnVolume after hot-reload.
+[2016.04.29-09.15.59:040][708]LogContentBrowser: Native class hierarchy updated for 'BatteryCollector' in 0.0020 seconds. Added 5 classes and 2 folders.
+[2016.04.29-09.15.59:045][708]Warning: HotReload successful (2 functions remapped  0 scriptstructs remapped)
+[2016.04.29-09.15.59:519][708]LogContentBrowser: Native class hierarchy populated in 0.0163 seconds. Added 1987 classes and 351 folders.
+[2016.04.29-09.15.59:519][708]Warning: HotReload took 14.2s.
+[2016.04.29-09.44.43:900][266]LogRenderer: Reallocating scene render targets to support 1208x600 (Frame:301414).
+[2016.04.29-09.50.41:792][509]LogSavePackage: Save=892.18ms
+[2016.04.29-09.50.41:792][509]LogSavePackage: Moving '../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Saved/CollectionLevel5AE1B6424A0BD8515864788A0019DF4C.tmp' to '../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Maps/CollectionLevel.umap'
+[2016.04.29-09.50.41:798][509]LogSavePackage: Total save time: 920.88ms
+[2016.04.29-09.50.41:798][509]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Zcience/Documents/UnrealProjects/BatteryCollector/Content/Maps/CollectionLevel.umap
+[2016.04.29-09.50.41:849][509]LogFileHelpers: Saving map 'CollectionLevel' took 1.160
+[2016.04.29-09.50.43:141][611]Cmd: QUIT_EDITOR
+[2016.04.29-09.50.43:446][611]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.04.29-09.50.43:518][611]LogExit: Preparing to exit.
+[2016.04.29-09.50.44:710][611]LogExit: Editor shut down
+[2016.04.29-09.50.44:712][611]LogExit: Transaction tracking system shut down
+[2016.04.29-09.50.45:071][611]LogObj: Freed 0b from 0 cluster array pools.
+[2016.04.29-09.50.45:073][611]LogExit: Object subsystem successfully closed.
+[2016.04.29-09.50.45:121][611]LogD3D11RHI: Shutdown
+[2016.04.29-09.50.45:121][611]LogD3D11RHI: CleanupD3DDevice
+[2016.04.29-09.50.45:279][611]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.04.29-09.50.45:305][611]LogDerivedDataCache: Shutdown
+[2016.04.29-09.50.45:312][611]LogModuleManager: Shutting down and abandoning module StaticMeshEditor (208)
+[2016.04.29-09.50.45:312][611]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (207)
+[2016.04.29-09.50.45:312][611]LogModuleManager: Shutting down and abandoning module BlueprintGraph (206)
+[2016.04.29-09.50.45:312][611]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (205)
+[2016.04.29-09.50.45:312][611]LogModuleManager: Shutting down and abandoning module CrashTracker (204)
+[2016.04.29-09.50.45:312][611]LogModuleManager: Shutting down and abandoning module SceneOutliner (203)
+[2016.04.29-09.50.45:312][611]LogModuleManager: Shutting down and abandoning module SuperSearch (202)
+[2016.04.29-09.50.45:312][611]LogModuleManager: Shutting down and abandoning module WidgetCarousel (201)
+[2016.04.29-09.50.45:312][611]LogModuleManager: Shutting down and abandoning module AddContentDialog (200)
+[2016.04.29-09.50.45:321][611]LogModuleManager: Shutting down and abandoning module GameplayTags (199)
+[2016.04.29-09.50.45:321][611]LogModuleManager: Shutting down and abandoning module EditorWidgets (198)
+[2016.04.29-09.50.45:321][611]LogModuleManager: Shutting down and abandoning module CollectionManager (197)
+[2016.04.29-09.50.45:321][611]LogModuleManager: Shutting down and abandoning module StatsViewer (196)
+[2016.04.29-09.50.45:322][611]LogModuleManager: Shutting down and abandoning module FoliageEdit (195)
+[2016.04.29-09.50.45:322][611]LogModuleManager: Shutting down and abandoning module LandscapeEditor (194)
+[2016.04.29-09.50.45:322][611]LogModuleManager: Shutting down and abandoning module ActorPickerMode (193)
+[2016.04.29-09.50.45:322][611]LogModuleManager: Shutting down and abandoning module GeometryMode (192)
+[2016.04.29-09.50.45:322][611]LogModuleManager: Shutting down and abandoning module TextureAlignMode (191)
+[2016.04.29-09.50.45:322][611]LogModuleManager: Shutting down and abandoning module BspMode (190)
+[2016.04.29-09.50.45:322][611]LogModuleManager: Shutting down and abandoning module PlacementMode (189)
+[2016.04.29-09.50.45:322][611]LogModuleManager: Shutting down and abandoning module AutomationWorker (188)
+[2016.04.29-09.50.45:322][611]LogModuleManager: Shutting down and abandoning module CharacterAI (187)
+[2016.04.29-09.50.45:322][611]LogModuleManager: Shutting down and abandoning module SmartSnapping (186)
+[2016.04.29-09.50.45:323][611]LogModuleManager: Shutting down and abandoning module ViewportSnapping (185)
+[2016.04.29-09.50.45:323][611]LogModuleManager: Shutting down and abandoning module LogVisualizer (184)
+[2016.04.29-09.50.45:324][611]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (183)
+[2016.04.29-09.50.45:324][611]LogModuleManager: Shutting down and abandoning module IntroTutorials (182)
+[2016.04.29-09.50.45:324][611]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (181)
+[2016.04.29-09.50.45:324][611]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (180)
+[2016.04.29-09.50.45:324][611]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (179)
+[2016.04.29-09.50.45:324][611]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (178)
+[2016.04.29-09.50.45:446][611]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (177)
+[2016.04.29-09.50.45:446][611]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (176)
+[2016.04.29-09.50.45:446][611]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (175)
+[2016.04.29-09.50.45:446][611]LogModuleManager: Shutting down and abandoning module MergeActors (174)
+[2016.04.29-09.50.45:447][611]LogModuleManager: Shutting down and abandoning module SizeMap (173)
+[2016.04.29-09.50.45:447][611]LogModuleManager: Shutting down and abandoning module TreeMap (172)
+[2016.04.29-09.50.45:447][611]LogModuleManager: Shutting down and abandoning module ReferenceViewer (171)
+[2016.04.29-09.50.45:447][611]LogModuleManager: Shutting down and abandoning module LocalizationService (170)
+[2016.04.29-09.50.45:447][611]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (169)
+[2016.04.29-09.50.45:448][611]LogModuleManager: Shutting down and abandoning module HardwareTargeting (168)
+[2016.04.29-09.50.45:448][611]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (167)
+[2016.04.29-09.50.45:448][611]LogModuleManager: Shutting down and abandoning module UndoHistory (166)
+[2016.04.29-09.50.45:448][611]LogModuleManager: Shutting down and abandoning module UserFeedback (165)
+[2016.04.29-09.50.45:448][611]LogModuleManager: Shutting down and abandoning module XmlParser (164)
+[2016.04.29-09.50.45:449][611]LogModuleManager: Shutting down and abandoning module Blutility (163)
+[2016.04.29-09.50.45:449][611]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (162)
+[2016.04.29-09.50.45:449][611]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (161)
+[2016.04.29-09.50.45:449][611]LogModuleManager: Shutting down and abandoning module InputBindingEditor (160)
+[2016.04.29-09.50.45:449][611]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (159)
+[2016.04.29-09.50.45:449][611]LogModuleManager: Shutting down and abandoning module SettingsEditor (158)
+[2016.04.29-09.50.45:450][611]LogModuleManager: Shutting down and abandoning module ProjectLauncher (157)
+[2016.04.29-09.50.45:451][611]LogModuleManager: Shutting down and abandoning module SessionFrontend (156)
+[2016.04.29-09.50.45:451][611]LogModuleManager: Shutting down and abandoning module ProfilerClient (155)
+[2016.04.29-09.50.45:452][611]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (154)
+[2016.04.29-09.50.45:452][611]LogModuleManager: Shutting down and abandoning module DeviceManager (153)
+[2016.04.29-09.50.45:496][611]LogModuleManager: Shutting down and abandoning module AutomationController (152)
+[2016.04.29-09.50.45:497][611]LogModuleManager: Shutting down and abandoning module AutomationWindow (151)
+[2016.04.29-09.50.45:498][611]LogModuleManager: Shutting down and abandoning module Layers (150)
+[2016.04.29-09.50.45:499][611]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (149)
+[2016.04.29-09.50.45:499][611]LogModuleManager: Shutting down and abandoning module DetailCustomizations (148)
+[2016.04.29-09.50.45:499][611]LogModuleManager: Shutting down and abandoning module PackagesDialog (147)
+[2016.04.29-09.50.45:499][611]LogModuleManager: Shutting down and abandoning module Persona (146)
+[2016.04.29-09.50.45:500][611]LogModuleManager: Shutting down and abandoning module Kismet (145)
+[2016.04.29-09.50.45:500][611]LogModuleManager: Shutting down and abandoning module GraphEditor (144)
+[2016.04.29-09.50.45:500][611]LogModuleManager: Shutting down and abandoning module ClassViewer (143)
+[2016.04.29-09.50.45:503][611]LogModuleManager: Shutting down and abandoning module Toolbox (142)
+[2016.04.29-09.50.45:503][611]LogModuleManager: Shutting down and abandoning module ModuleUI (141)
+[2016.04.29-09.50.45:504][611]LogModuleManager: Shutting down and abandoning module MovieSceneTools (140)
+[2016.04.29-09.50.45:504][611]LogModuleManager: Shutting down and abandoning module OutputLog (139)
+[2016.04.29-09.50.45:504][611]LogModuleManager: Shutting down and abandoning module GammaUI (138)
+[2016.04.29-09.50.45:505][611]LogModuleManager: Shutting down and abandoning module Documentation (137)
+[2016.04.29-09.50.45:506][611]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (136)
+[2016.04.29-09.50.45:506][611]LogModuleManager: Shutting down and abandoning module AnalyticsET (135)
+[2016.04.29-09.50.45:506][611]LogModuleManager: Shutting down and abandoning module Analytics (134)
+[2016.04.29-09.50.45:506][611]LogModuleManager: Shutting down and abandoning module PortalServices (133)
+[2016.04.29-09.50.45:506][611]LogModuleManager: Shutting down and abandoning module PortalRpc (132)
+[2016.04.29-09.50.45:506][611]LogModuleManager: Shutting down and abandoning module MessagingRpc (131)
+[2016.04.29-09.50.45:506][611]LogModuleManager: Shutting down and abandoning module AITestSuite (130)
+[2016.04.29-09.50.45:506][611]LogModuleManager: Shutting down and abandoning module GameplayDebugger (129)
+[2016.04.29-09.50.45:506][611]LogModuleManager: Shutting down and abandoning module AIModule (128)
+[2016.04.29-09.50.45:506][611]LogModuleManager: Shutting down and abandoning module ProfilerService (127)
+[2016.04.29-09.50.45:690][611]LogModuleManager: Shutting down and abandoning module TaskGraph (126)
+[2016.04.29-09.50.45:691][611]LogModuleManager: Shutting down and abandoning module SlateRemote (125)
+[2016.04.29-09.50.45:691][611]LogModuleManager: Shutting down and abandoning module SteamVRController (124)
+[2016.04.29-09.50.45:691][611]LogModuleManager: Shutting down and abandoning module SteamVR (123)
+[2016.04.29-09.50.45:691][611]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (122)
+[2016.04.29-09.50.45:691][611]LogModuleManager: Shutting down and abandoning module OculusLibrary (121)
+[2016.04.29-09.50.45:691][611]LogModuleManager: Shutting down and abandoning module OculusInput (120)
+[2016.04.29-09.50.45:691][611]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (119)
+[2016.04.29-09.50.45:691][611]LogModuleManager: Shutting down and abandoning module CableComponent (118)
+[2016.04.29-09.50.45:691][611]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (117)
+[2016.04.29-09.50.45:691][611]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (116)
+[2016.04.29-09.50.45:692][611]LogModuleManager: Shutting down and abandoning module HTML5Networking (115)
+[2016.04.29-09.50.45:692][611]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2016.04.29-09.50.45:692][611]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2016.04.29-09.50.45:692][611]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2016.04.29-09.50.45:692][611]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2016.04.29-09.50.45:692][611]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2016.04.29-09.50.45:692][611]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2016.04.29-09.50.45:692][611]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2016.04.29-09.50.45:692][611]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2016.04.29-09.50.45:692][611]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2016.04.29-09.50.45:692][611]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2016.04.29-09.50.45:692][611]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2016.04.29-09.50.45:692][611]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2016.04.29-09.50.45:693][611]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2016.04.29-09.50.45:693][611]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2016.04.29-09.50.45:693][611]LogModuleManager: Shutting down and abandoning module HotReload (100)
+[2016.04.29-09.50.45:693][611]LogModuleManager: Shutting down and abandoning module MainFrame (99)
+[2016.04.29-09.50.45:693][611]LogModuleManager: Shutting down and abandoning module LevelEditor (98)
+[2016.04.29-09.50.45:695][611]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (97)
+[2016.04.29-09.50.45:700][611]LogModuleManager: Shutting down and abandoning module AssetRegistry (96)
+[2016.04.29-09.50.45:818][611]LogModuleManager: Shutting down and abandoning module ContentBrowser (95)
+[2016.04.29-09.50.45:819][611]LogModuleManager: Shutting down and abandoning module Paper2DEditor (94)
+[2016.04.29-09.50.45:820][611]LogModuleManager: Shutting down and abandoning module BatteryCollector (93)
+[2016.04.29-09.50.45:820][611]LogModuleManager: Shutting down and abandoning module UdpMessaging (92)
+[2016.04.29-09.50.45:921][611]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (91)
+[2016.04.29-09.50.45:921][611]LogModuleManager: Shutting down and abandoning module Paper2D (90)
+[2016.04.29-09.50.45:921][611]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (89)
+[2016.04.29-09.50.45:921][611]LogModuleManager: Shutting down and abandoning module Media (88)
+[2016.04.29-09.50.45:921][611]LogModuleManager: Shutting down and abandoning module WmfMedia (87)
+[2016.04.29-09.50.45:921][611]LogModuleManager: Shutting down and abandoning module MediaAssets (86)
+[2016.04.29-09.50.45:921][611]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (85)
+[2016.04.29-09.50.45:921][611]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (84)
+[2016.04.29-09.50.45:921][611]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (83)
+[2016.04.29-09.50.45:921][611]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (82)
+[2016.04.29-09.50.45:921][611]LogModuleManager: Shutting down and abandoning module PropertyEditor (81)
+[2016.04.29-09.50.45:921][611]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (80)
+[2016.04.29-09.50.45:922][611]LogModuleManager: Shutting down and abandoning module FunctionalTesting (79)
+[2016.04.29-09.50.45:922][611]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (78)
+[2016.04.29-09.50.45:922][611]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.04.29-09.50.45:922][611]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.04.29-09.50.45:922][611]LogModuleManager: Shutting down and abandoning module Sequencer (75)
+[2016.04.29-09.50.45:923][611]LogModuleManager: Shutting down and abandoning module AssetTools (74)
+[2016.04.29-09.50.45:924][611]LogModuleManager: Shutting down and abandoning module UMGEditor (73)
+[2016.04.29-09.50.45:925][611]LogModuleManager: Shutting down and abandoning module UMG (72)
+[2016.04.29-09.50.45:926][611]LogModuleManager: Shutting down and abandoning module SlateReflector (71)
+[2016.04.29-09.50.45:926][611]LogModuleManager: Shutting down and abandoning module Slate (70)
+[2016.04.29-09.50.45:926][611]LogModuleManager: Shutting down and abandoning module EditorStyle (69)
+[2016.04.29-09.50.45:931][611]LogModuleManager: Shutting down and abandoning module SessionServices (68)
+[2016.04.29-09.50.45:931][611]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (67)
+[2016.04.29-09.50.45:931][611]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (66)
+[2016.04.29-09.50.45:931][611]LogModuleManager: Shutting down and abandoning module XAudio2 (65)
+[2016.04.29-09.50.45:931][611]LogModuleManager: Shutting down and abandoning module Networking (63)
+[2016.04.29-09.50.45:931][611]LogModuleManager: Shutting down and abandoning module Core (62)
+[2016.04.29-09.50.45:931][611]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.04.29-09.50.45:931][611]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.04.29-09.50.45:931][611]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.04.29-09.50.45:931][611]LogModuleManager: Shutting down and abandoning module CookingStats (58)
+[2016.04.29-09.50.45:931][611]LogModuleManager: Shutting down and abandoning module DerivedDataCache (57)
+[2016.04.29-09.50.45:932][611]LogDerivedDataCache: Shutdown
+[2016.04.29-09.50.45:932][611]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.04.29-09.50.45:932][611]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.04.29-09.50.45:932][611]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.04.29-09.50.45:933][611]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.04.29-09.50.45:933][611]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.04.29-09.50.45:933][611]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.04.29-09.50.45:933][611]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.04.29-09.50.45:933][611]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.04.29-09.50.45:933][611]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.04.29-09.50.45:933][611]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.04.29-09.50.45:933][611]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.04.29-09.50.45:934][611]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.04.29-09.50.45:935][611]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.04.29-09.50.45:935][611]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.04.29-09.50.47:939][611]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.04.29-09.50.47:940][611]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.04.29-09.50.47:941][611]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.04.29-09.50.47:941][611]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.04.29-09.50.47:942][611]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.04.29-09.50.47:942][611]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.04.29-09.50.47:942][611]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.04.29-09.50.47:958][611]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.04.29-09.50.47:959][611]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.04.29-09.50.47:959][611]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.04.29-09.50.47:959][611]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.04.29-09.50.47:959][611]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.04.29-09.50.47:959][611]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.04.29-09.50.47:959][611]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.04.29-09.50.47:959][611]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.04.29-09.50.47:959][611]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.04.29-09.50.47:959][611]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.04.29-09.50.47:962][611]LogExit: Exiting.
+[2016.04.29-09.50.47:989][611]Log file closed, 04/29/16 11:50:47
